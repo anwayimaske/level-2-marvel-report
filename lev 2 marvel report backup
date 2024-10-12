@@ -1,0 +1,101 @@
+# MECHANICAL TASKS
+## CFD Simulation
+#### For this task I first designed NACA 4412 aerofoil in fusion 360. And then simulated in wind tunnel using CFD. The inlet air flow was set. to 28 m/s and the outlet was kept unknown to get the exact value of the air flow after passing through the aerofoil. I choose aluminium material for the aerofoil due to its lightweight and sustainable nature. Obtained around 25 iterations for generating the graph and then visualised the result using traces feature. The summary was generated. And the data obtained can be used to calculate the lift and the drug forces.
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-03%20183410.png?raw=true)
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-03%20182628.png?raw=true)
+## Generative Design
+#### Generative Design is a process that uses artificial intelligence (AI) and computational design software to create multiple design solutions based on a set of parameters and constraints. Instead of designing a product manually, designers provide the software with information about the desired function, materials, manufacturing methods, and other constraints. The software then generates numerous design options that meet these criteria.
+#### For this task I first made an aircraft fuselage using fusion 360. And then specified the load constraints and the preserved body and obstacle constraints after that I selected the materials titanium 6AI-4V, stainless steel AISI 446, aluminium and steel AISI 8640 361 QT. Then after running the pre check test I generated outcomes around 4 to 8 out comes were generated.
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-03%20225856.png?raw=true)
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-03%20230004.png?raw=true)
+## Assembly and Simulation of Gripper
+#### Assembly is the process of combining individual components or parts into a larger, more complex product. It's a fundamental operation in manufacturing, engineering, and construction. Assemblies can range from simple structures to intricate machines.
+#### A gripper is a mechanical device designed to grasp, hold, or manipulate objects. It's often used as an end-effector for robotic arms, allowing them to interact with the physical world. Grippers can be designed in various configurations depending on the specific application and the type of objects they need to handle.
+#### Referenced the given CAD drawings and assembled a gripper using fusion 360. First I had to complete the individual components after that using the assembly environment in fusion 360 I assembled all the parts together to complete the gripper.
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-04%20165905.png?raw=true)
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-04%20165608.png?raw=true)
+
+
+#   ELECTRONIC TASKS
+## Logic Design: Full Adder
+#### A full adder is a digital logic circuit that performs the addition of two single-bit binary numbers and a carry-in bit, producing a sum bit and a carry-out bit. It is a fundamental building block in digital circuits, used extensively in arithmetic operations like addition, subtraction, multiplication, and division.
+#### The full adder operates based on the following truth table:
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-05%20090502.png?raw=true)
+#### From the truth table, we can observe the following rules for calculating the sum and carry-out bits:
+#### Sum: The sum bit is 1 if an odd number of inputs (A, B, or Carry-in) are 1. Otherwise, it is 0.
+#### Carry-out: The carry-out bit is 1 if two or more inputs are 1. Otherwise, it is 0.
+#### A full adder can be implemented using various combinations of logic gates, such as AND, OR, and NOT gates.
+#### Applications of Full Adders:
+#### Ripple-Carry Adders: Full adders are used in cascade to create ripple-carry adders, which can add multi-bit binary numbers.
+#### Arithmetic Logic Units (ALUs): ALUs, which perform various arithmetic and logical operations, often use full adders as their fundamental components.
+#### Digital Computers: Full adders are essential in the design of digital computers for performing arithmetic operations.
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-09-28%20141956.png?raw=true)
+# Filter Design: Second-Order Bandpass Filter with LTspice
+#### A second-order bandpass filter allows signals within a specific frequency range (bandwidth) to pass through while attenuating signals outside that range. We can design this filter using an operational amplifier (op-amp) like the IC741 and passive components like resistors and capacitors. But i used OP747 because IC 741 was unavailable in LTSpice. 
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-09-28%20104154.png?raw=true)
+
+# Voltage Multiplier
+#### Used TinkerCad's component library to build a voltage multiplier circuit with a 555 Timer IC, capacitors, and diodes.Simulated the circuit to verify the functionality of the first voltage doubler stage (9V to 18V).Designed a cascaded version of the voltage doubler to achieve a final output of 27V. This involved replicating the initial circuit and connecting them strategically. Simulated the entire cascaded circuit to confirm the 27V output and analyze its performance under various load conditions.A voltage multiplier is an electrical circuit that converts a low-voltage AC or DC to a higher voltage. the circuit was made using 555IC timer and capacitor pumps. Initially, I faced issues with the task but was able overcome it with the help of coordinators.
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-05%20092301.png?raw=true)
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-05%20092326.png?raw=true)
+# Sourcing & Materials Selection
+## Motor: Brushless DC (BLDC) Hub Motor
+#### Material: The motor casing is typically made of aluminum alloy, which is lightweight, corrosion-resistant, and good at dissipating heat.
+#### The hub motor is mounted directly inside the wheel. This 500W motor generates enough power to propel the bike to speeds of 40 km/h.A BLDC motor is highly efficient, has fewer moving parts, and provides good torque, essential for balancing speed and hill climbing. Aluminum helps reduce the overall weight of the bike and avoids overheating during extended use.
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-12%20130257.png?raw=true)
+## Battery: Lithium-ion Battery (36V, 15Ah)
+#### Material: The casing is typically made of plastic or aluminum alloy for protection. Inside, lithium-ion cells are used due to their high energy density.
+#### The lithium-ion battery provides the necessary power to drive the motor. It stores 540 Wh of energy, providing a range of up to 50 km per charge.Lithium-ion batteries are chosen for their excellent energy-to-weight ratio, long lifespan, and fast charging capabilities. They provide sufficient power for the 50 km range while keeping the bike lightweight and compact.
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-12%20130401.png?raw=true)
+## Controller: Brushless Motor Controller (36V/48V, 20A)
+#### Material: Plastic housing with aluminum heat sinks to dissipate heat generated by power electronics.
+#### The controller manages the power flow from the battery to the motor, allowing for smooth acceleration and speed control.The controller is designed to handle the power requirements of the 500W motor efficiently. It ensures smooth operation and protection against overvoltage or overheating. Aluminum heat sinks prevent damage due to heat buildup.
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-12%20130507.png?raw=true)
+## Throttle: Half-Twist Throttle with LED Display
+#### Material: The throttle casing is made of plastic with a rubber grip for comfort.
+#### This component allows the rider to control the speed of the bike by twisting the throttle, much like a motorcycle. The LED display shows battery status and speed.Plastic and rubber materials are lightweight and durable, providing ergonomic control while minimizing weight. The LED display ensures easy monitoring of battery charge and speed in real-time.
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-12%20130624.png?raw=true)
+## Pedal Assist Sensor (PAS)
+#### Material: Small plastic sensor encased in rubber for protection.
+#### The PAS system detects when the rider is pedaling and automatically provides electric assistance from the motor.The PAS system allows for increased range by integrating the rider's pedaling effort with motor assistance. It’s a lightweight component with minimal energy consumption.
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-12%20130719.png?raw=true)
+## Frame: Aluminum Alloy Bicycle Frame
+#### Material: Aluminum alloy (typically 6061 or 7005).
+#### The frame is the main structure of the bike, supporting the rider and all components. It is designed for use with 26-28 inch wheels.Aluminum alloy is lightweight yet strong enough to support a load of 90 kg. It is corrosion-resistant, which extends the lifespan of the bike, and offers a good balance between durability and cost compared to carbon fiber or steel. The lightness of the frame also contributes to higher speeds and longer range.
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-12%20130844.png?raw=true)
+## Wheels and Tires: 26-inch Wheels with Tubeless Tires
+#### Material: Aluminum alloy rims with rubber tires.
+#### The wheels and tires support the weight of the bike and rider, provide traction, and contribute to overall speed and range.Aluminum rims are lightweight and durable, providing a good compromise between strength and performance. Tubeless tires are chosen for their better resistance to punctures and lower rolling resistance, which improves range.
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-12%20130954.png?raw=true)
+## Brakes: Mechanical or Hydraulic Disc Brakes (160-180mm Rotors)
+#### Material: The rotors are made of stainless steel, and the calipers are typically made from aluminum alloy.
+#### Disc brakes provide the necessary stopping power, especially when traveling at higher speeds of 40 km/h.Disc brakes offer superior stopping power compared to rim brakes, which is essential for an e-bike that can travel at speeds up to 40 km/h. Stainless steel provides corrosion resistance, while aluminum calipers reduce weight.
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-12%20131035.png?raw=true)
+## Suspension Fork: Front Suspension (80-100mm Travel)
+#### Material: Aluminum stanchions with steel springs or air suspension.
+#### The suspension fork provides a smoother ride, especially over rough terrain or bumpy roads.The aluminum construction keeps the weight down while providing enough strength to absorb impacts. A suspension fork improves rider comfort without adding significant weight.
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-12%20131125.png?raw=true)
+## Lights: LED Front and Rear Lights
+#### Material: Plastic casing with LED bulbs.
+#### LED lights are highly energy-efficient, drawing minimal power from the battery. Plastic casing is lightweight and durable, keeping the overall bike weight low.LED lights improve visibility for night riding or poor weather conditions.
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-12%20131245.png?raw=true)
+## Handlebars and Seat
+#### Material: Aluminum handlebars with foam or gel seat.
+#### The handlebars allow for steering, while the seat provides comfort for the rider.Aluminum is lightweight and strong, providing reliable steering control. The seat uses gel or foam padding to ensure comfort during long rides, especially important for maintaining endurance over a 50 km range.
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-12%20131331.png?raw=true)
+## Fenders: Plastic Fenders
+#### 	Material: Plastic.
+#### Plastic is lightweight and resistant to rust, making it ideal for fenders, which need to be durable and able to withstand exposure to the elements.Fenders protect the rider from mud, water, and debris.
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-12%20131415.png?raw=true)
+## Kickstand: Adjustable Aluminum Kickstand
+#### 	Material: Aluminum alloy.
+#### The kickstand allows the bike to stand upright when not in use.Aluminum is lightweight yet strong, making it a perfect material for a component that needs to support the bike’s weight without adding unnecessary mass.
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-12%20131511.png?raw=true)
+# Animation and Rendering
+#### Designed lego man parting in fusion 360 and then assembled it. using rendering simulated environment with soviet era tanks in the background. Downloaded the file from poly haven website.  
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-12%20112551.png?raw=true)
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-12%20091353.png?raw=true)
+# Matlab Onramp (Simulink and stateflow)
+#### completed simulink and stateflow onramp course.
+![image](https://github.com/anwayimaske/Report-images/blob/main/Screenshot%202024-10-10%20142801.png?raw=true)
+![image]()
